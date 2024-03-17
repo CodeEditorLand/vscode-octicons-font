@@ -1,22 +1,20 @@
 {
-  "author": {
-    "name": "Microsoft Corporation"
-  },
+  "name": "vscode-octicons-font",
+  "version": "1.3.2",
+  "description": "",
+  "homepage": "https://github.com/microsoft/vscode-octicons-font#readme",
   "bugs": {
     "url": "https://github.com/microsoft/vscode-octicons-font/issues"
   },
-  "description": "",
-  "devDependencies": {
-    "icon-font-generator": "2.1.10"
-  },
-  "homepage": "https://github.com/microsoft/vscode-octicons-font#readme",
-  "license": "MIT",
-  "main": "index.js",
-  "name": "vscode-octicons-font",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microsoft/vscode-octicons-font.git"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "main": "index.js",
   "scripts": {
     "build": "npm run compile && npm run fonts -- --html false",
     "clean": "rm -rf dist && mkdir dist && rm -rf _temp",
@@ -24,5 +22,7 @@
     "dev": "npm run compile && npm run fonts -- --html true --htmltp src/template/preview.hbs",
     "fonts": "icon-font-generator src/icons/*.svg -o dist -n octicons -p octicon --csstp src/template/styles.hbs --height 1000 --center --codepoints src/template/mapping.json --descent 180 --json false --types 'ttf'"
   },
-  "version": "1.3.2"
+  "devDependencies": {
+    "icon-font-generator": "2.1.10"
+  }
 }
