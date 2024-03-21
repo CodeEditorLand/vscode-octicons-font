@@ -1,24 +1,11 @@
 {
-	"name": "vscode-octicons-font",
-	"version": "0.0.1",
-	"private": false,
 	"description": "",
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-	"bugs": {
-		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	"devDependencies": {
+		"icon-font-generator": "2.1.11",
+		"typescript-esbuild": "0.4.5"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Playform",
-		"email": "Hello@Playform.Cloud",
-		"url": "https://playform.cloud"
-	},
-	"type": "module",
 	"main": "index.js",
+	"name": "vscode-octicons-font",
 	"scripts": {
 		"build": "npm run compile && npm run fonts -- --html false",
 		"clean": "rm -rf dist && mkdir dist && rm -rf _temp",
@@ -27,11 +14,5 @@
 		"fonts": "icon-font-generator src/icons/*.svg -o dist -n octicons -p octicon --csstp src/template/styles.hbs --height 1000 --center --codepoints src/template/mapping.json --descent 180 --json false --types 'ttf'",
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
 	},
-	"devDependencies": {
-		"icon-font-generator": "2.1.11",
-		"typescript-esbuild": "0.4.5"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+	"type": "module"
 }
