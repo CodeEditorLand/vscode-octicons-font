@@ -1,7 +1,7 @@
 {
 	"description": "",
 	"devDependencies": {
-		"icon-font-generator": "^2.1.11"
+		"icon-font-generator": "2.1.11"
 	},
 	"main": "index.js",
 	"name": "vscode-octicons-font",
