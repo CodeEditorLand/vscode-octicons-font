@@ -1,10 +1,11 @@
 {
+	"dependencies": {},
 	"description": "",
 	"devDependencies": {
 		"icon-font-generator": "2.1.11"
 	},
 	"main": "index.js",
-	"name": "vscode-octicons-font",
+	"name": "@codeeditorland/octicons-font",
 	"scripts": {
 		"build": "npm run compile && npm run fonts -- --html false",
 		"clean": "rm -rf dist && mkdir dist && rm -rf _temp",
